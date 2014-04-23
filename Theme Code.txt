@@ -1501,7 +1501,7 @@ showCalendars=0" frameborder="0" scrolling="no"></iframe>
 <script type="text/javascript">
 
 {block:ifopenlinksinnewtab}
-$('a[href^="http://"]').attr('target','_blank');
+$('a[href^="http://"]');//.attr('target','_blank');
 {block:ifopenlinksinnewtab}
 
 //  Instagram Feed
