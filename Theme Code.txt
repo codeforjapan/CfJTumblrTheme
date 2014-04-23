@@ -325,6 +325,12 @@ span#install-theme-text{
     display:inline;
     font-size:23px;
     letter-spacing:2px;
+
+        background:url(http://static.tumblr.com/8acmqu6/x72n2x48g/code_for_japan_logo.png) no-repeat center left;
+        background-size:2em;
+        line-height:2em;
+        padding-left:2.5em;
+        display:inline-block;
     }
 
 #cover #navigation ul{
