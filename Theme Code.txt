@@ -942,11 +942,16 @@ transition:bottom .5s ease,background .2s ease
 
     #container{
         width:100%;
-        padding:0 30px
+        min-width:330px;
+        padding:0 25px
         }
 
     #cover #navigation ul li{
         margin:0 5px
+        }
+
+    #sidebar .calendar iframe {
+        width:280px;
         }
 
     .small{
