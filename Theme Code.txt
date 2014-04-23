@@ -1343,7 +1343,16 @@ showCalendars=0" frameborder="0" scrolling="no"></iframe>
  
 {block:Text}
 <div class="text">
-    {block:Title}<h2>{Title}</h2>{/block:Title}
+    {block:Title}<a href="{permalink}"><h2>{Title}</h2></a>{/block:Title}
+    <div class="tags">
+        <ul>
+            {block:Tags}
+            <li>
+                <a href={TagURL} class="tag {Tag}">{Tag}</a>
+            </li>
+            {/block:Tags}
+        </ul>
+    </div>
     {Body}
 </div>
 {/block:Text}
@@ -1425,16 +1434,6 @@ showCalendars=0" frameborder="0" scrolling="no"></iframe>
     {/block:Caption}
  
     <div class="details">
-       
-        {block:ifhidenotposttags}
-        {block:HasTags}
-            <div class="tags">
-                {block:Tags}
-                    <a href="{TagURL}">#{Tag}</a>
-                {/block:Tags}
-            </div>        
-        {/block:HasTags}
-        {/block:ifhidenotposttags}
        
         <a href="{permalink}">{TimeAgo}</a>
        
