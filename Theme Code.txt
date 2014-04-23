@@ -1500,6 +1500,17 @@ showCalendars=0" frameborder="0" scrolling="no"></iframe>
 
 <script type="text/javascript">
 
+/*sidebar hidden page */
+var searchPath = location.pathname.toLowerCase();
+var rep = searchPath.match(/aboutus|event|anything/);//検索条件にマッチしたURLのページだけサイドバーを消す。追加する場合は|で区切ること。追加する文字は小文字で指定すること。メディアチーム宮澤。
+if(rep!==null){
+    $("#permalink #sidebar").css("display","none");
+    $("#permalink .entry").css("width","100%");
+    $("#permalink #posts").css("border-right","none").css("width","100%");
+    $("#posts iframe").attr("width","100%");
+};
+
+
 {block:ifopenlinksinnewtab}
 $('a[href^="http://"]');//.attr('target','_blank');
 {block:ifopenlinksinnewtab}
