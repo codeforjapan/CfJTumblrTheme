@@ -399,7 +399,7 @@ span#install-theme-text{
     }
 
 #sidebar #social a{
-    margin:0 14px 0 0;
+    margin:0 14px 10px 0;
     font:13px/31px "icon";
     text-align:center;
     display:inline-block;
@@ -430,6 +430,7 @@ span#install-theme-text{
 #sidebar #social a.github:hover{background:#ea4c89}
 #sidebar #social a.linkedin:hover{background:#1769ff}
 #sidebar #social a.youtube:hover{background:#bb0000}
+#sidebar #social a.rss:hover{background:#FA762E}
 
 #sidebar #description{
     
@@ -1154,9 +1155,6 @@ h1,h2,h3,h4,h5{
         {block:ifshowrandomlink}
             <li><a href="/random">Random</a></li>
         {/block:ifshowrandomlink}
-        {block:ifshowrsslink}
-            <li><a href="{RSS}">RSS</a></li>
-        {/block:ifshowrsslink}
         {block:Pages}
             <li><a href="{URL}" title="{Label}">{Label}</a></li>
         {/block:Pages}
@@ -1202,7 +1200,7 @@ h1,h2,h3,h4,h5{
     {block:ifshowsocialblock}
     <div id="social">
         <h2>{text:Social Links Title}</h2>
-{Block:ifURLTwitter}<a href="{text:URL Twitter}" class="twitter" target="_blank">1</a>{/Block:ifURLTwitter}{Block:ifURLFacebook}<a href="{text:URL Facebook}" class="facebook" target="_blank">2</a>{/Block:ifURLFacebook}{Block:ifURLVimeo}<a href="{text:URL Vimeo}" class="vimeo" target="_blank">3</a>{Block:ifURLVimeo}{Block:ifURLFlickr}<a href="{text:URL Flickr}" class="flickr" target="_blank">4</a>{/Block:ifURLFlickr}{Block:ifURLGooglePlus}<a href="{text:URL Google Plus}" class="google" target="_blank">5</a>{/Block:ifURLGooglePlus}{Block:ifURLYoutube}<a href="{text:URL Youtube}" class="youtube" target="_blank">u</a>{/Block:ifURLYoutube}{Block:ifURLPinterest}<a href="{text:URL Pinterest}" class="pinterest" target="_blank">6</a>{/Block:ifURLPinterest}{Block:ifURLLinkedin}<a href="{text:URL Linkedin}" class="linkedin" target="_blank">7</a>{/Block:ifURLLinkedin}{Block:ifURLDribble}<a href="{text:URL Dribble}" class="dribble" target="_blank">8</a>{/Block:ifURLDribble}{Block:ifURLStumbleupon}<a href="{text:URL Stumbleupon}" class="stumbleupon" target="_blank">9</a>{/Block:ifURLStumbleupon}{Block:ifURLSpotify}<a href="{text:URL Spotify}" class="spotify" target="_blank">=</a>{/Block:ifURLSpotify}{Block:ifURLInstagram}<a href="{text:URL Instagram}" class="instagram" target="_blank">q</a>{/Block:ifURLInstagram}{Block:ifURLBehance}<a href="{text:URL Behance}" class="behance" target="_blank">e</a>{/Block:ifURLBehance}{Block:ifURLGithub}<a href="{text:URL Github}" class="github" target="_blank">r</a>{/Block:ifURLGithub}{Block:ifURLSoundcloud}<a href="{text:URL Soundcloud}" class="soundcloud" target="_blank">t</a>{/Block:ifURLSoundcloud}
+{Block:ifURLTwitter}<a href="{text:URL Twitter}" class="twitter" target="_blank">1</a>{/Block:ifURLTwitter}{Block:ifURLFacebook}<a href="{text:URL Facebook}" class="facebook" target="_blank">2</a>{/Block:ifURLFacebook}{Block:ifURLVimeo}<a href="{text:URL Vimeo}" class="vimeo" target="_blank">3</a>{Block:ifURLVimeo}{Block:ifURLFlickr}<a href="{text:URL Flickr}" class="flickr" target="_blank">4</a>{/Block:ifURLFlickr}{Block:ifURLGooglePlus}<a href="{text:URL Google Plus}" class="google" target="_blank">5</a>{/Block:ifURLGooglePlus}{Block:ifURLYoutube}<a href="{text:URL Youtube}" class="youtube" target="_blank">u</a>{/Block:ifURLYoutube}{Block:ifURLPinterest}<a href="{text:URL Pinterest}" class="pinterest" target="_blank">6</a>{/Block:ifURLPinterest}{Block:ifURLLinkedin}<a href="{text:URL Linkedin}" class="linkedin" target="_blank">7</a>{/Block:ifURLLinkedin}{Block:ifURLDribble}<a href="{text:URL Dribble}" class="dribble" target="_blank">8</a>{/Block:ifURLDribble}{Block:ifURLStumbleupon}<a href="{text:URL Stumbleupon}" class="stumbleupon" target="_blank">9</a>{/Block:ifURLStumbleupon}{Block:ifURLSpotify}<a href="{text:URL Spotify}" class="spotify" target="_blank">=</a>{/Block:ifURLSpotify}{Block:ifURLInstagram}<a href="{text:URL Instagram}" class="instagram" target="_blank">q</a>{/Block:ifURLInstagram}{Block:ifURLBehance}<a href="{text:URL Behance}" class="behance" target="_blank">e</a>{/Block:ifURLBehance}{Block:ifURLGithub}<a href="{text:URL Github}" class="github" target="_blank">r</a>{/Block:ifURLGithub}{Block:ifURLSoundcloud}<a href="{text:URL Soundcloud}" class="soundcloud" target="_blank">t</a>{/Block:ifURLSoundcloud}{block:ifshowrsslink}<a href="{RSS}" class="rss">s</a>{/block:ifshowrsslink}
     <hr>
     </div><!--  Social      -->
     {/block:ifshowsocialblock}
