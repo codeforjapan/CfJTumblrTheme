@@ -868,7 +868,8 @@ transition:bottom .5s ease,background .2s ease
     
     #cover{
         left:0;
-        margin:0    
+        margin:0;
+        padding:0 25px
         }
     
     #cover #navigation ul li{
@@ -973,7 +974,7 @@ h1,h2,h3,h4,h5{
 #cover{
     background:rgba({RGBcolor:cover},.6) url("{image:Cover}") center no-repeat;
     background-size:cover;
-    box-shadow:0 0 0 1px rgba(0,0,0,.07)
+    /*box-shadow:0 0 0 1px rgba(0,0,0,.07)*/
     }
 
 #cover #navigation{
@@ -997,7 +998,7 @@ h1,h2,h3,h4,h5{
 
 #container{
     background:{color:Front Background};
-    box-shadow:0 0 0 1px rgba(0,0,0,.07)
+    /*box-shadow:0 0 0 1px rgba(0,0,0,.07)*/
     }
 
 .sb-left #posts{
