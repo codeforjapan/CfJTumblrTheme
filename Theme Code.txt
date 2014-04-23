@@ -385,7 +385,7 @@ span#install-theme-text{
     }
 
 #sidebar #search input[type="text"]{
-    width:155px;
+    width:153px;
     padding:10px;
     font:400 12px arial;
     letter-spacing:1px;
