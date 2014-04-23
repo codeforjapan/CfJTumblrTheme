@@ -116,6 +116,15 @@
 <meta name="text:URL Youtube" content=""/>
 
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family={select:Body Font}|{select:Title Font}:400,400italic,700,700italic">
+
+<meta property="og:title" content="{block:PostTitle}{PostTitle}{/block:PostTitle}" />
+<meta property="og:type" content="blog" />
+<meta property="og:url" content="{Permalink}" />
+<meta property="og:image" content="{PortraitURL-64}" />
+<meta property="og:site_name" content="{Title}" />
+<meta property="fb:app_id" content="180106498847259" />
+<meta property="og:description" content="{block:Description}{MetaDescription}{/block:Description}" />
+
  
 <link rel="stylesheet" href="http://static.tumblr.com/3zmswwt/D2Bmy1zgh/icon-embedded.css"/><!--[if IE 7]><link rel="stylesheet" href="http://static.tumblr.com/3zmswwt/gLtmy1zgm/icon-ie7.css"/><![endif]-->
  
