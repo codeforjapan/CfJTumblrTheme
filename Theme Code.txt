@@ -1010,7 +1010,7 @@ h1,h2,h3,h4,h5{
     {/block:ifuppercaseblogtitle}
     color:{color:Blog Title}
     }
-
+    
 #cover #navigation ul li a{
 	color:{color:Navigation Links}
     }
@@ -1439,7 +1439,7 @@ showCalendars=0" frameborder="0" scrolling="no"></iframe>
     <div class="details">
        
         <a href="{permalink}">{TimeAgo}</a>
-       
+
         {block:NoteCount}
         / <a href="{permalink}">{NoteCountWithLabel}</a>
         {/block:NoteCount}
@@ -1505,12 +1505,12 @@ showCalendars=0" frameborder="0" scrolling="no"></iframe>
 
 /*sidebar hidden page */
 var searchPath = location.pathname.toLowerCase();
-var rep = searchPath.match(/aboutus|event|anything/);//検索条件にマッチしたURLのページだけサイドバーを消す。追加する場合は|で区切ること。追加する文字は小文字で指定すること。メディアチーム宮澤。
+var rep = searchPath.match(/aboutus|event|brigade/);//検索条件にマッチしたURLのページだけサイドバーを消す。追加する場合は|で区切ること。追加する文字は小文字で指定すること。メディアチーム宮澤。
 if(rep!==null){
     $("#permalink #sidebar").css("display","none");
-    $("#permalink .entry").css("width","100%");
+    $("#permalink .entry").css("cssText","width : 100%!important;");
     $("#permalink #posts").css("border-right","none").css("width","100%");
-    $("#posts iframe").attr("width","100%");
+    $("#posts iframe").attr("width","100%!important");
 };
 
 
