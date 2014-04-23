@@ -1195,6 +1195,19 @@ h1,h2,h3,h4,h5{
         <hr>
     {/block:description}
 
+<!--Tumblr Tag Cloud-->
+    <h2>Tag</h2>
+<script type="text/javascript" src="http://static.tumblr.com/zpgybcc/Neelpcziw/tumblr.min.js?minsize=120&maxsize=280&css=default"></script>
+    <hr>
+    <h2>Event</h2>
+    <div class="calendar">
+        <iframe src="https://www.google.com/calendar/embed?mode=AGENDA&amp;showTitle=0&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=follfkk298jpaggn7nj4kt7vio%40group.calendar.google.com&amp;color=%23A32929&amp;ctz=Asia%2FTokyo&amp;
+showTabs=0&amp;
+showCalendars=0" frameborder="0" scrolling="no"></iframe>
+        <a href="/Event">もっと見る</a>
+    </div>
+    <hr>
+       
     {block:ifshowsearchbox}
     <div class="responsive-hide">
         <form action="/search" method="get" id="search">
