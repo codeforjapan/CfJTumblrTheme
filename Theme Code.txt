@@ -132,7 +132,8 @@
 	}
 </script>
  
-<link rel="stylesheet" href="http://static.tumblr.com/3zmswwt/D2Bmy1zgh/icon-embedded.css"/><!--[if IE 7]><link rel="stylesheet" href="http://static.tumblr.com/3zmswwt/gLtmy1zgm/icon-ie7.css"/><![endif]-->
+<link rel="stylesheet" href="http://static.tumblr.com/3zmswwt/D2Bmy1zgh/icon-embedded.css"/>
+<!--[if IE 7]><link rel="stylesheet" href="http://static.tumblr.com/3zmswwt/gLtmy1zgm/icon-ie7.css"/><![endif]-->
  
 <link href='http://static.tumblr.com/3zmswwt/ZdRmwnqj6/lightbox.css' rel='stylesheet' type='text/css'>
  
@@ -308,6 +309,7 @@ span#install-theme-text{
     }
 
 /*      End-Default     */
+
 
 /*      Header     */
 
@@ -847,7 +849,7 @@ transition:bottom .5s ease,background .2s ease
     
     #cover #navigation h1{
         display:block;
-        font-size:20px
+        font-size:20px;
         }
     
     #cover #navigation ul{
@@ -1355,6 +1357,7 @@ showCalendars=0" frameborder="0" scrolling="no"></iframe>
     </div>
     {Body}
 </div>
+
 {/block:Text}
  
 {block:Quote}
@@ -1528,7 +1531,5 @@ $('#instagram-feed').embedagram({instagram_id:{text:Instagram ID}});
 {block:ifGoogleAnalyticsID}var _gaq = _gaq || [];_gaq.push(['_setAccount', '{text:Google Analytics ID}']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();{block:ifGoogleAnalyticsID}
 
 </script>
- 
-
 </body>
 </html>
