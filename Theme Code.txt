@@ -20,7 +20,7 @@
  
 -->
 
-<title>{Title}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>{block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
+<title>{block:SearchPage}({lang:Search results for SearchQuery}) | {/block:SearchPage}{block:PermalinkPage}{block:PostSummary}{PostSummary} | {/block:PostSummary}{/block:PermalinkPage}{Title}</title>{block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
  
 <link rel="alternate" type="application/rss+xml" href="{RSS}">
 <link rel="shortcut icon" href="{favicon}">
