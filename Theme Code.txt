@@ -1513,6 +1513,11 @@ if(rep!==null){
     $("#posts iframe").attr("width","100%!important");
 };
 
+//個別記事ページでのみ適用。
+//var rep2 = searchPath.match(/post/);
+//if(rep2!==null){
+//    $("#posts").after($("#sidebar"));
+//}
 
 {block:ifopenlinksinnewtab}
 $('a[href^="http://"]');//.attr('target','_blank');
