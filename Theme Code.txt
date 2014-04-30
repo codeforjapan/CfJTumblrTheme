@@ -1598,8 +1598,15 @@ $('#instagram-feed').embedagram({instagram_id:{text:Instagram ID}});
 
 (function (){var $K = $('#posts');$K.imagesLoaded(function (){$K.masonry({itemSelector:"#post-info,{block:indexpage}.entry{/block:indexpage}",columnWidth:".entry",gutter:0})});{block:ifinfinitescrolling}$K.infinitescroll({navSelector:'#pagination',nextSelector:'#pagination a#older',itemSelector: ".entry",loading:{finishedMsg: function(){$('#infscr-loading').css("opacity", "0");}}},function(newElements){var $newElems = $(newElements).css("opacity","0").css("pointer-events","none");$("p").remove(":contains('Source:'),:contains('via ')");$('.photoset-grid').photosetGrid({highresLinks: true,rel: $('.photoset-grid').attr('data-id'),gutter: '5px',onComplete: function(){}});$('.photoset-grid').each(function() {$(this).magnificPopup({delegate: 'a',type: 'image',gallery:{enabled:true},removalDelay: 200,mainClass: 'mfp-fade'});});var $newElemsIDs = $newElems.map(function (){return this.id;}).get();$newElems.imagesLoaded(function (){$newElems.css("opacity","1").css("pointer-events","auto");$K.masonry('appended',$newElems,true);console.log($newElems,$newElemsIDs);Tumblr.LikeButton.get_status_by_post_ids($newElemsIDs);});});{/block:ifinfinitescrolling}})();
 
-{block:ifGoogleAnalyticsID}var _gaq = _gaq || [];_gaq.push(['_setAccount', '{text:Google Analytics ID}']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();{block:ifGoogleAnalyticsID}
+{block:ifGoogleAnalyticsID}
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', '{text:Google Analytics ID}', 'code4japan.org');
+  ga('send', 'pageview');
+{block:ifGoogleAnalyticsID}
 </script>
 </body>
 </html>
