@@ -1285,7 +1285,7 @@ h2 {
     {/block:description}
 
 <!--Tumblr Tag Cloud-->
-    <h2>Tag</h2>
+    <h2>CATEGORY</h2>
 <script type="text/javascript" src="http://static.tumblr.com/zpgybcc/Neelpcziw/tumblr.min.js?minsize=120&maxsize=280&css=default"></script>
     <hr>
     <h2>Event</h2>
