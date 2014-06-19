@@ -1573,7 +1573,7 @@ showCalendars=0" frameborder="0" scrolling="no"></iframe>
 
 <script type="text/javascript" src="http://static.tumblr.com/3zmswwt/5Mcmymmqy/scripts.js"></script>
 
-<script type="text/javascript" src="/tweets.js"></script>
+<!--script type="text/javascript" src="/tweets.js"></script-->
 
 <script type="text/javascript">
 
