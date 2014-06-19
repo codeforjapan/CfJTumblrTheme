@@ -130,14 +130,12 @@
 <link rel="apple-touch-icon" sizes="114x114 href=https://raw.githubusercontent.com/codeforjapan/designAssets/master/icon/CfJLogo/apple-touch-icon-114-precomposed.png" />
 <link rel="apple-touch-icon" sizes="144x144 href=https://raw.githubusercontent.com/codeforjapan/designAssets/master/icon/CfJLogo/apple-touch-icon-144-precomposed.png" />
 
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
 <script>
   var strUA = "";
   strUA = navigator.userAgent.toLowerCase();
    if(strUA.indexOf("safari") == -1 || strUA.indexOf("os x 10_7") != -1 || strUA.indexOf("os 5") != -1 || strUA.indexOf("os 6") != -1){
-        document.write("<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic,500,500italic' rel='stylesheet' type='text/css'>");
-    }
+		document.write("<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic,500,500italic' rel='stylesheet' type='text/css'>");
+	}
 </script>
  
 <link rel="stylesheet" href="http://static.tumblr.com/3zmswwt/D2Bmy1zgh/icon-embedded.css"/>
@@ -805,7 +803,7 @@ transition:bottom .5s ease,background .2s ease
 
 /* added 140429 by Yazaki */
 #permalink p {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 #permalink .blocks {
@@ -817,31 +815,32 @@ transition:bottom .5s ease,background .2s ease
 }
 
 #permalink .block2L {
-    width: 440px;
-    margin-right: 16px;
-    float: left;
+	width: 440px;
+	margin-right: 16px;
+	float: left;
 }
 
 #permalink .block2R {
-    width: 440px;
-    float: right;
+	width: 440px;
+	float: right;
 }
 
 #permalink ul {
-    padding: 0;
+	padding: 0;
 }
 
 #permalink ul.memberlist li {
-    float: left;
-    margin-right: 16px;
-    list-style-type: none;
+	float: left;
+	margin-right: 16px;
+	margin-bottom: 16px;
+	list-style-type: none;
 }
 
 #permalink ul.memberlist li .face {
-    display: block;
-    width: 160px;
-    height: 160px;
-    background-color: #666;
+	display: block;
+	width: 160px;
+	height: 160px;
+	background-color: #666;
 }
 /* added 140429 by Yazaki */
 
@@ -1077,7 +1076,7 @@ h2 {
     }
     
 #cover #navigation ul li a{
-    color:{color:Navigation Links}
+	color:{color:Navigation Links}
     }
 
 #cover #navigation ul li a:hover{
@@ -1363,8 +1362,8 @@ showCalendars=0" frameborder="0" scrolling="no"></iframe>
 <div id="post-info">
     <h3>Search results for &ldquo;{SearchQuery}&rdquo;</h3>
     {block:NoSearchResults}
-        <p>Sorry, nothing found.</p>
-    {/block:NoSearchResults}
+	    <p>Sorry, nothing found.</p>
+	{/block:NoSearchResults}
 </div>
 {/block:SearchPage}
 
