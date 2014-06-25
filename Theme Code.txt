@@ -1603,7 +1603,7 @@ if(rep!==null){
 //}
 
 {block:ifopenlinksinnewtab}
-$('a[href^="http://"]');//.attr('target','_blank');
+//$('a[href^="http://"]');.attr('target','_blank');
 {block:ifopenlinksinnewtab}
 
 //  Instagram Feed
