@@ -197,8 +197,8 @@ a,
 #sidebar,
 #pagination,
 .entry{
-    -webkit-transition:opacity .6s linear .1s;
-    transition:opacity .6s linear .1s
+    -webkit-transition:opacity .3s linear .1s;
+    transition:opacity .3s linear .1s
     }
 
 a#install-button{
