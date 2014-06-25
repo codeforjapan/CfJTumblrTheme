@@ -129,14 +129,6 @@
 <link rel="apple-touch-icon" sizes="72x72 href=https://raw.githubusercontent.com/codeforjapan/designAssets/master/icon/CfJLogo/apple-touch-icon-72-precomposed.png"" />
 <link rel="apple-touch-icon" sizes="114x114 href=https://raw.githubusercontent.com/codeforjapan/designAssets/master/icon/CfJLogo/apple-touch-icon-114-precomposed.png" />
 <link rel="apple-touch-icon" sizes="144x144 href=https://raw.githubusercontent.com/codeforjapan/designAssets/master/icon/CfJLogo/apple-touch-icon-144-precomposed.png" />
-
-<script>
-  var strUA = "";
-  strUA = navigator.userAgent.toLowerCase();
-   if(strUA.indexOf("safari") == -1 || strUA.indexOf("os x 10_7") != -1 || strUA.indexOf("os 5") != -1 || strUA.indexOf("os 6") != -1){
-        document.write("<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic,500,500italic' rel='stylesheet' type='text/css'>");
-    }
-</script>
  
 <link rel="stylesheet" href="http://static.tumblr.com/3zmswwt/D2Bmy1zgh/icon-embedded.css"/>
 <!--[if IE 7]><link rel="stylesheet" href="http://static.tumblr.com/3zmswwt/gLtmy1zgm/icon-ie7.css"/><![endif]-->
@@ -1228,6 +1220,16 @@ h2 {
 #posts, #sidebar, #pagination{opacity:1}
 </style>
 </noscript>
+
+<script>
+  var strUA = "";
+  strUA = navigator.userAgent.toLowerCase();
+   if(strUA.indexOf("safari") == -1 || strUA.indexOf("os x 10_7") != -1 || strUA.indexOf("os 5") != -1 || strUA.indexOf("os 6") != -1){
+        document.write("<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic,500,500italic' rel='stylesheet' type='text/css'>");
+    }
+</script>
+
+
 {block:ifGoogleAnalyticsID}
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
